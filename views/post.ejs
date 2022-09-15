@@ -1,0 +1,11 @@
+<%- include("partials/header"); -%>
+
+<% allInfo.forEach(function(element) { %>
+    <% if (element.title == ejsTitle) { %>
+        <h1>   <%= element.title %> </h1>
+    
+        <p> <%= element.body %> </p>
+    <% } %>
+<% }); %>
+
+<%- include("partials/footer"); -%>
